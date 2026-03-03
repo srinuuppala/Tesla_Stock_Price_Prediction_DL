@@ -90,7 +90,7 @@ def predict_and_plot(df, title):
 # =====================================================
 st.header("📁 Default Dataset: TSLA.csv")
 
-df_default = pd.read_csv("TSLA.csv")
+df_default = pd.read_csv("Tesla_Stock_Price_Prediction_DL/TSLA.csv")
 st.dataframe(df_default.head())
 
 predict_and_plot(df_default, "Default TSLA.csv")
@@ -121,3 +121,4 @@ st.info("Model Performance: LSTM 1-Day MSE ≈ 519")
 st.info("Model Performance: LSTM 5-Day MSE ≈ 1450")
 
 st.info("Model Performance: LSTM 10-Day MSE ≈ 2900")
+
