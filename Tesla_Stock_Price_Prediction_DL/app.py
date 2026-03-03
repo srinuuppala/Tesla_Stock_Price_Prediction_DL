@@ -26,11 +26,11 @@ forecast_days = st.sidebar.selectbox(
 # Load Models
 # -------------------------------
 if forecast_days == "1-Day":
-    model = load_model("lstm_1day.h5")
+    model = load_model("Tesla_Stock_Price_Prediction_DL/lstm_1day.h5")
 elif forecast_days == "5-Day":
-    model = load_model("lstm_5day.h5")
+    model = load_model("Tesla_Stock_Price_Prediction_DL/lstm_5day.h5")
 else:
-    model = load_model("lstm_10day.h5")
+    model = load_model("Tesla_Stock_Price_Prediction_DL/lstm_10day.h5")
 
 TIME_STEPS = 60
 
@@ -119,4 +119,5 @@ if uploaded_file is not None:
 st.warning("⚠️ This is a predictive model for educational purposes only. Not financial advice.")
 st.info("Model Performance: LSTM 1-Day MSE ≈ 519")
 st.info("Model Performance: LSTM 5-Day MSE ≈ 1450")
+
 st.info("Model Performance: LSTM 10-Day MSE ≈ 2900")
